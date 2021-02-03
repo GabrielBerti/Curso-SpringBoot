@@ -14,11 +14,9 @@
     <name>eventoapp</name>
     <description>Demo project for Spring Boot</description>
 
-    <properties>
-        <java.version>11</java.version>
-    </properties>
-
     <dependencies>
+    
+    
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -88,16 +86,31 @@
 
     <build>
         <plugins>
+        
+        	<plugin>
+          <groupId>com.heroku.sdk</groupId>
+          <artifactId>heroku-maven-plugin</artifactId>
+          <version>0.3.6</version>
+          <configuration>
+            <appName>boiling-beach-1111</appName>
+          </configuration>
+        </plugin>
+        
+        
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
             
             <plugin>
+            
          <groupId>org.apache.maven.plugins</groupId>
          <artifactId>maven-jar-plugin</artifactId>
+         <version>3.8.1</version>
 
          <configuration>
+         <source>1.7</source>
+        <target>1.7</target>
             <archive>
                <manifest>
                   <mainClass>com.eventoapp.eventoapp.EventoappApplication</mainClass>
