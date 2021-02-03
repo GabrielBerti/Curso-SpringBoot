@@ -113,7 +113,7 @@
          <configuration>
             <archive>
                <manifest>
-                  <mainClass>com.eventoapp.eventoapp.EventoappApplication</mainClass>
+                  <mainClass>com.eventoapp.EventoappApplication</mainClass>
                </manifest>
             </archive>
          </configuration>
