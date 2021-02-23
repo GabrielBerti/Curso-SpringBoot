@@ -18,7 +18,7 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 @Profile("dev")
 public class DataConfiguration {
 
-	
+	//
 	// tst
 	@Bean
     public DataSource dataSource(){
